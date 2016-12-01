@@ -39,14 +39,13 @@
 
 ### 3. Android Studioでアプリを起動
 
-AndroidStudioを開きます、「既存プロジェクトを開く」と選択します。ダウンロードして解凍したプロジェクトを選択します。
+* AndroidStudioを開いて、「Open an existing Android Studio project」から、ダウンロードして解凍したプロジェクトを選択します
 
 ![画像8-1](/readme-img/android_project_open.png)
 
-選択したプロジェクトを開きます。
+* 選択したプロジェクトが開かれます
 
 ![画像9](/readme-img/009.png)
-
 
 ### 4. APIキーの設定
 * `MainActivity.java`を編集します
@@ -56,7 +55,10 @@ AndroidStudioを開きます、「既存プロジェクトを開く」と選択�
 
 * それぞれ`YOUR_NCMB_APPLICATION_KEY`と`YOUR_NCMB_CLIENT_KEY`の部分を書き換えます
  * このとき、ダブルクォーテーション（`"`）を消さないように注意してください！
- * 書き換え終わったら`command + s`キーで保存をします
+* 書き換え終わったら保存してください
+ * Windowsの場合、Ctrl + Sで保存できます。
+ * Macの場合、command + Sで保存できます。
+
 
 ### 5. 画像ファイルのアップロード
 * [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)のダッシュボードで、「ファイルストア」を開きます
@@ -89,7 +91,8 @@ AndroidStudioを開きます、「既存プロジェクトを開く」と選択�
 
 __画像が表示されない場合__
 * ネットワークを確認してください
-* 画面左下にエラーコードが出ている場合は[こちら](http://mb.cloud.nifty.com/doc/current/rest/common/error.html#REST%20API%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)から確認できます
+* エラー時はアラートでエラーコードを表示しています
+ * エラーコードが表示されている場合は[こちら](http://mb.cloud.nifty.com/doc/current/rest/common/error.html#REST%20API%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)を確認してください
 
 ## 解説
 ここではサンプルアプリに実装済みの内容について紹介します
