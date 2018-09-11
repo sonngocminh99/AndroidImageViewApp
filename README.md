@@ -125,7 +125,7 @@ __画像が表示されない場合__
                  if (er != null) {
                      //失敗処理
                      new AlertDialog.Builder(MainActivity.this)
-                             .setTitle("Notification from Nifty")
+                             .setTitle("Notification from NifCloud")
                              .setMessage("Error:" + er.getMessage())
                              .setPositiveButton("OK", null)
                              .show();
