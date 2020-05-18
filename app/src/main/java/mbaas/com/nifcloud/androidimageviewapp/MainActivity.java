@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //**************** APIキーの設定 **************
-        NCMB.initialize(this.getApplicationContext(), "YOUR_NCMB_APPLICATION_KEY",
-                "YOUR_NCMB_CLIENT_KEY");
+        NCMB.initialize(this.getApplicationContext(), "YOUR_APPLICATION_KEY",
+                "YOUR_CLIENT_KEY");
 
         setContentView(R.layout.activity_main);
 
