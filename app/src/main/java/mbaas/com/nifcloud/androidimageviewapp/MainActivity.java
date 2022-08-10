@@ -2,12 +2,13 @@ package mbaas.com.nifcloud.androidimageviewapp;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.nifcloud.mbaas.core.FetchFileCallback;
 import com.nifcloud.mbaas.core.NCMB;
@@ -21,14 +22,15 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_RESULT = 0;
     Button _btnShow;
     ImageView _iv;
-
+    public static String APP_KEY = "2bfb444423219ff54256bbe41ff270c5d8c3e81eaa3121c18603363e99b0b673";
+    public static String CLIENT_KEY = "2e0167555ae06b73a73a8b2ef1ea9614d566b17cb7c0d191da80797221088bf2";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //**************** APIキーの設定 **************
-        NCMB.initialize(this.getApplicationContext(), "YOUR_APPLICATION_KEY",
-                "YOUR_CLIENT_KEY");
+        NCMB.initialize(this.getApplicationContext(), APP_KEY,
+                CLIENT_KEY);
 
         setContentView(R.layout.activity_main);
 
